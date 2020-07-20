@@ -13,7 +13,7 @@ def binary_search(arr, target):
     low = 0
     high = len(arr)-1
     while low <= high:
-        middle = (low + high) / 2
+        middle = (low + high) // 2
     if target < arr[middle]:
         high = middle - 1  # this will elimate the RHS
     elif target > arr[middle]:
@@ -22,3 +22,14 @@ def binary_search(arr, target):
         return middle
 
     return -1  # not found
+
+
+# search 5
+
+    # 0    1
+    # |    |
+    # [3,  5]
+
+    # first mid point will be 3 check 5 against 3 it is not the target
+    # so we toss out everything on the left we remain with five is the
+    # mid point. mid point is +1 so the mid point will be 5
