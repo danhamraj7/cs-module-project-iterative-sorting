@@ -22,12 +22,30 @@ def selection_sort(arr):
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
+    # it repeats the loop until the entire arr is sorted
     # Your code here
+    swaps_occurred = True
+    while swaps_occurred:
+        swaps_occurred = False
+        # traverse the array
+        # i starts with the first el,  -1 will stop i from comparing after it has loop through the entire arr
+        for i in range(0, len(arr) - 1):
+          # compares two elements in one go
+            if arr[i] > arr[i + 1]:
+                # swaps the elements if they are not in proper order
+                arr[i], arr[i + 1], arr[i]
+                swaps_occurred = True
 
     return arr
 
 
-print(selection_sort([3, 5, 2, 1, 4, 8, 9, 7, 6]))
+print(bubble_sort([3, 5, 7, 1, 2, 9, 8, 4, 6]))
+
+
+# bubble sort causes the big value elements to rise to the right side
+# the first iteration the largest element in the arr goes to first
+# on the right side
+# on the 2nd iteration the 2nd largest goes second on the RHS
 
 
 '''
