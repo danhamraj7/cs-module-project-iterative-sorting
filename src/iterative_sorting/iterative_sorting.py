@@ -34,7 +34,7 @@ def bubble_sort(arr):
             if arr[i] > arr[i + 1]:
                 # swaps the elements if they are not in proper order
                 arr[i], arr[i + 1], arr[i]
-                swaps_occurred = True
+                swaps_occurred = True  # toggle swap
 
     return arr
 
